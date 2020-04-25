@@ -4,7 +4,7 @@ services:
 
 # START SERVICE backup.external
   backup:
-    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.backup.external:20200326
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.backup.external:20200419
     environment: []
     command: [${CONTECO_DC_BACKUP_COMMAND}]
     volumes: [${CONTECO_DC_BACKUP_VOLUMES}]

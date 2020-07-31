@@ -1,6 +1,6 @@
 ##### BEGIN image.base/Dockerfile/image-header #####
 FROM vcwebio/conteco.image.wrapper AS wrapper
-FROM vcwebio/conteco.external.bash:5.0.9 AS base
+FROM vcwebio/conteco.external.bash:5.0.18 AS base
 ##### END image.base/Dockerfile/image-header #####
 
 ##### BEGIN image.base/Dockerfile/conteco #####
@@ -24,7 +24,7 @@ ENV CONTECO_REALM="vcwebio" \
     CONTECO_TYPE="backup" \
     CONTECO_NAME="external" \
     CONTECO_TAG="20200731" \
-    CONTECO_BASE="external.bash:5.0.9" \
+    CONTECO_BASE="external.bash:5.0.18" \
     CONTECO_BUILD="image-base"
 LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.realm="vcwebio" \
@@ -32,7 +32,7 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.type="backup" \
       io.vcweb.name="external" \
       io.vcweb.tag="20200731" \
-      io.vcweb.base="external.bash:5.0.9" \
+      io.vcweb.base="external.bash:5.0.18" \
       io.vcweb.build="image-base" \
       io.vcweb.label="backup.external - Conteco" \
       io.vcweb.description="Backup of all repositories of the external images of the ContEco ecosystem." \
